@@ -2,7 +2,7 @@ hw1
 ================
 2022-09-27
 
-Github repo: <https://github.com/essenter/hw1stats433>
+[My Github Repo](https://github.com/essenter/hw1stats433)
 
 ``` r
 library(nycflights13)
@@ -22,7 +22,7 @@ library(tidyverse)
 library(dplyr)
 ```
 
-\##Question 1##
+\###Question 1
 
 How many flights have a missing dep_time? What other variables are
 missing? What might these rows represent?
@@ -53,7 +53,7 @@ There are 8,255 with a missing departure time. The rows that are missing
 dep_time are also missing dep_delay, arr_time, arr_delay, and air_time.
 It is likely that these rows represent cancelled flights.
 
-\##Question 2##
+\###Question 2
 
 Currently dep_time and sched_dep_time are convenient to look at, but
 hard to compute with because they’re not really continuous numbers.
@@ -81,7 +81,7 @@ flights_depMin %>% select(dep_time, sched_dep_time, dep_time_min, sched_dep_time
     ## 10      558            600          358                360
     ## # … with 336,766 more rows
 
-\##Question 3##
+\###Question 3
 
 Look at the number of canceled flights per day. Is there a pattern? Is
 the proportion of canceled flights related to the average delay? Use
