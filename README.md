@@ -98,10 +98,12 @@ flights %>%
     ## `summarise()` has grouped output by 'year', 'month'. You can override using the
     ## `.groups` argument.
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- --> There are
-some days that only have a small number of flights cancelled, but there
-are some days with a very large amount of flights cancelled. It seems as
-if days with bad weather or other circumstances cause there to be a lot
-of flights cancelled, but days with only a couple flights cancelled are
-likely from extenuating circumstances. When there is a higher proportion
-of flights cancelled there seems to be a large average delay.
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+There are some days that only have a small number of flights cancelled,
+but there are some days with a very large amount of flights cancelled.
+It seems as if days with bad weather or other circumstances cause there
+to be a lot of flights cancelled, but days with only a couple flights
+cancelled are likely from extenuating circumstances. When there is a
+higher proportion of flights cancelled there seems to be a large average
+delay.
