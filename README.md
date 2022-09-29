@@ -2,6 +2,8 @@ hw1
 ================
 2022-09-27
 
+Github repo: <https://github.com/essenter/hw1stats433>
+
 ``` r
 library(nycflights13)
 library(tidyverse)
@@ -96,21 +98,10 @@ flights %>%
     ## `summarise()` has grouped output by 'year', 'month'. You can override using the
     ## `.groups` argument.
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
-
-``` r
-cancelledFlights <- flights %>% 
-  group_by(year, month, day) %>% 
-  summarise(cancelled = sum(is.na(dep_time)), cancelledProportion = cancelled/n(), avgDelay = mean(dep_delay, na.rm = T))
-```
-
-    ## `summarise()` has grouped output by 'year', 'month'. You can override using the
-    ## `.groups` argument.
-
-There are some days that only have a small number of flights cancelled,
-but there are some days with a very large amount of flights cancelled.
-It seems as if days with bad weather or other circumstances cause there
-to be a lot of flights cancelled, but days with only a couple flights
-cancelled are likely from extenuating circumstances. When there is a
-higher proportion of flights cancelled there seems to be a large average
-delay.
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- --> There are
+some days that only have a small number of flights cancelled, but there
+are some days with a very large amount of flights cancelled. It seems as
+if days with bad weather or other circumstances cause there to be a lot
+of flights cancelled, but days with only a couple flights cancelled are
+likely from extenuating circumstances. When there is a higher proportion
+of flights cancelled there seems to be a large average delay.
