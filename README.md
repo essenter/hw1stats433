@@ -49,9 +49,9 @@ flights %>% filter(is.na(dep_time))
     ## #   minute <dbl>, time_hour <dttm>, and abbreviated variable names
     ## #   ¹​sched_dep_time, ²​dep_delay, ³​arr_time, ⁴​sched_arr_time, ⁵​arr_delay
 
-The rows that are missing dep_time are also missing dep_delay, arr_time,
-arr_delay, and air_time. It is likely that these rows represent
-cancelled flights.
+There are 8,255 with a missing departure time. The rows that are missing
+dep_time are also missing dep_delay, arr_time, arr_delay, and air_time.
+It is likely that these rows represent cancelled flights.
 
 \##Question 2##
 
